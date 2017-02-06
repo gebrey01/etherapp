@@ -52,7 +52,7 @@
 									<strong> Sign in to continue</strong>
 								</div>
 								<div class="panel-body">
-									<form role="form" action="/login" method="POST">
+									<form:form role="form" action="/login" method="POST">
 										<fieldset>
 											<div class="row">
 												<div class="center-block">
@@ -87,7 +87,7 @@
 												</div>
 											</div>
 										</fieldset>
-									</form>
+									</form:form>
 								</div>
 								<div class="panel-footer ">
 									<br/>						

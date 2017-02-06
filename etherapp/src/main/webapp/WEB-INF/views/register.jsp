@@ -20,13 +20,9 @@
     
     <body>
     
-    	<spring:form >
-    	
-    	
-    	
-    	
-    	</spring:form>
-    	
+    <h1>Testing</h1>
+    
+    		
     	
     	
     	
