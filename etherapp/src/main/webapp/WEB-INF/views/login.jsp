@@ -1,31 +1,26 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles"%>
-
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-
-
+<%@ include file="inc/page_declares.inc" %>
+    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
 
 	<head>
-		<spring:url value="/resources/stylesheets/login.css" var="mainCss" />
+	
+		<spring:url value="/resources/stylesheets/login.css" var="loginCss" />
 		<spring:url value="/resources/bootstrap/css/bootstrap.min.css" var="bootstrap" />
 		<spring:url value="/resources/bootstrap/js/bootstrap.min.js" var="bootstrapJs" />
 		<spring:url value="/resources/images" var="imgPath" />
-		<spring:url value="/resources/js/jquery-3.1.1.min.js" var="jqueryJs" />
+		<spring:url value="/resources/js/jquery-3.1.1.min.js" var="jqueryJs" />		
 		
-	    
-	    <link rel="stylesheet" type="text/css" href="${mainCss}">
 	    <link rel="stylesheet" type="text/css" href="${bootstrap}">
-	    <script type="text/javascript" language="javascript" src="${jqueryJs}"></script>
-	    <script type="text/javascript" language="javascript" src="${bootstrapJs}"></script>
+	    <link rel="stylesheet" type="text/css" href="${loginCss}">	    
+	
+		<script type="text/javascript" src="${jqueryJs}"></script>
+		<script type="text/javascript" src="${bootstrapJs}"></script>
+	    
 	    
 	    
 	    <script type="text/javascript">
@@ -46,7 +41,9 @@
     </head>
     
     <body>
+      
     
+        
 			    <div class="container" style="margin-top:40px">
 			    	<div class="row">
 						<div class="col-sm-6 col-md-4 col-md-offset-4">
@@ -99,6 +96,9 @@
 						</div>
 					</div>
 				</div>
+				
+	
+	
 	</body>
 	
 </html>
