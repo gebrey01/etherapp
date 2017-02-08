@@ -41,64 +41,70 @@
     </head>
     
     <body>
-      
+    
+    
     
         
-			    <div class="container" style="margin-top:40px">
-			    	<div class="row">
-						<div class="col-sm-6 col-md-4 col-md-offset-4">
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<strong> Sign in to continue</strong>
-								</div>
-								<div class="panel-body">
-									<form:form role="form" action="/login" method="POST" commandName="User">
-										<fieldset>
-											<div class="row">
-												<div class="center-block">
-													<img class="profile-img"
-														src="${imgPath}/profile.png" alt="">
-												</div>
-											</div>
-											<div class="row">
-												<div class="col-sm-12 col-md-10  col-md-offset-1 ">
-													<div class="form-group">
-														<div class="input-group">
-															<span class="input-group-addon">
-																<i class="glyphicon glyphicon-user"></i>
-															</span> 
-															<form:form input class="form-control" placeholder="Username" path="firstname" name="loginname" type="text" autofocus />
-														</div>
-													</div>
-													<div class="form-group">
-														<div class="input-group">
-															<span class="input-group-addon">
-																<i class="glyphicon glyphicon-lock"></i>
-															</span>
-															<form:form input class="form-control" placeholder="Password" id="password" name="password" type="password" />
-															<span class="input-group-addon" id="showPass">
-																<i id="eye" class="glyphicon glyphicon-eye-open"></i>
-															</span>												
-														</div>
-													</div>										
-													<div class="form-group">
-														<input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign in">
-													</div>
-												</div>
-											</div>
-										</fieldset>
-									</form:form>
-								</div>
-								<div class="panel-footer ">
-									<br/>						
-								</div>					
-			                </div>
+    
+    	<div class="container" style="margin-top:40px">
+		   	<div class="row">
+				<div class="col-sm-6 col-md-4 col-md-offset-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<strong> Sign in to continue</strong>
 						</div>
-					</div>
+						<div class="panel-body">
+							<form:form role="form" action="/login" method="POST" commandName="User">
+								
+								<form:errors path="*" cssClass="alert alert-danger" role="alert"/>
+								
+								<fieldset>
+									<div class="row">
+										<div class="center-block">
+											<img class="profile-img"
+												src="${imgPath}/profile.png" alt="">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12 col-md-10  col-md-offset-1 ">
+											<div class="form-group">
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="glyphicon glyphicon-user"></i>
+													</span> 
+													<form:form input class="form-control" placeholder="Username" path="firstname" name="userName" type="text" autofocus />
+													<form:errors path="userName" style="color:#ff0000"/>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="glyphicon glyphicon-lock"></i>
+													</span>
+													<form:form input class="form-control" placeholder="Password" id="password" name="password" type="password" />
+													<form:errors path="password" style="color:#ff0000"/>
+													<span class="input-group-addon" id="showPass">
+														<i id="eye" class="glyphicon glyphicon-eye-open"></i>
+													</span>												
+												</div>
+											</div>										
+											<div class="form-group">
+													<input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign in">
+											</div>
+										</div>
+									</div>
+								</fieldset>
+							</form:form>
+						</div>
+						<div class="panel-footer ">
+							<br/>						
+						</div>					
+			        </div>
 				</div>
-				
-	
-	
+			</div>
+		</div>
+		
+			
 	</body>
 	
 </html>
