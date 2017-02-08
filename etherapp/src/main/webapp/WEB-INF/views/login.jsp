@@ -104,6 +104,10 @@
 			</div>
 		</div>
 		
+		<div>
+			<strong>&copy; Million D. Gebreyesus</strong>
+		</div>
+		
 			
 	</body>
 	

@@ -15,7 +15,7 @@
     
     
     <bean id="tilesConfigurer"
-    	class="org.springframework.web.servlet.view.tiles3.Tilesconfigurer">
+    	class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
     	<property name="definitions">
     		<list>
     			<value>/WEB-INF/defs/general.xml</value>
@@ -24,7 +24,7 @@
     </bean>
     
     <bean id="viewResolver"
-    	class="org.springframework.web.servlet.view.UrlBasedviewResolver">
+    	class="org.springframework.web.servlet.view.UrlBasedViewResolver">
     	<property name="viewClass"
     		value="org.springframework.web.servlet.view.tiles3.TilesView"/>
     	<property name="order" value="0" />
