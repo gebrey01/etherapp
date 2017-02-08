@@ -52,7 +52,7 @@
 									<strong> Sign in to continue</strong>
 								</div>
 								<div class="panel-body">
-									<form:form role="form" action="/login" method="POST">
+									<form:form role="form" action="/login" method="POST" commandName="User">
 										<fieldset>
 											<div class="row">
 												<div class="center-block">
@@ -67,7 +67,7 @@
 															<span class="input-group-addon">
 																<i class="glyphicon glyphicon-user"></i>
 															</span> 
-															<input class="form-control" placeholder="Username" name="loginname" type="text" autofocus>
+															<form:form input class="form-control" placeholder="Username" path="firstname" name="loginname" type="text" autofocus />
 														</div>
 													</div>
 													<div class="form-group">
@@ -75,7 +75,7 @@
 															<span class="input-group-addon">
 																<i class="glyphicon glyphicon-lock"></i>
 															</span>
-															<input class="form-control" placeholder="Password" id="password" name="password" type="password" value="">
+															<form:form input class="form-control" placeholder="Password" id="password" name="password" type="password" />
 															<span class="input-group-addon" id="showPass">
 																<i id="eye" class="glyphicon glyphicon-eye-open"></i>
 															</span>												
