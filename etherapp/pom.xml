@@ -6,7 +6,7 @@
   <packaging>war</packaging>
   
   <dependencies>
-  
+   
   		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-web-api</artifactId>
@@ -23,7 +23,7 @@
 		<dependency>
     		<groupId>javax.servlet.jsp.jstl</groupId>
     		<artifactId>jstl-api</artifactId>
-    		<version>1.2-rev-1</version>
+    		<version>1.2</version>
 		</dependency>
 		
 		<dependency>
@@ -76,6 +76,7 @@
 						<contextReloadable>true</contextReloadable>
 					</configuration>
 				</plugin>
+				
 	   		</plugins>
 	   	</pluginManagement>
    </build>

@@ -54,7 +54,7 @@
 							<strong> Sign in to continue</strong>
 						</div>
 						<div class="panel-body">
-							<form:form role="form" action="/login" method="POST" commandName="User">
+							<form:form role="form" action="/home" method="POST" modelAttribute="userForm">
 								
 								<form:errors path="*" cssClass="alert alert-danger" role="alert"/>
 								
@@ -72,7 +72,7 @@
 													<span class="input-group-addon">
 														<i class="glyphicon glyphicon-user"></i>
 													</span> 
-													<form:form input class="form-control" placeholder="Username" path="firstname" name="userName" type="text" autofocus />
+													<form:input class="form-control" placeholder="Username" id="username" path="userName" />
 													<form:errors path="userName" style="color:#ff0000"/>
 												</div>
 											</div>
@@ -81,7 +81,7 @@
 													<span class="input-group-addon">
 														<i class="glyphicon glyphicon-lock"></i>
 													</span>
-													<form:form input class="form-control" placeholder="Password" id="password" name="password" type="password" />
+													<form:password class="form-control" placeholder="Password" id="password" path="password" />
 													<form:errors path="password" style="color:#ff0000"/>
 													<span class="input-group-addon" id="showPass">
 														<i id="eye" class="glyphicon glyphicon-eye-open"></i>
@@ -105,7 +105,7 @@
 		</div>
 		
 		<div>
-			<strong>&copy; Million D. Gebreyesus</strong>
+			<center><strong>&copy; Million D. Gebreyesus</strong></center>
 		</div>
 		
 			

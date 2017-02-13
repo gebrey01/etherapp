@@ -29,7 +29,7 @@
   			<h3>Loading...........</h3>
   
 	  		<div class="progress">
-	    		<div class="progress-bar progress-bar-success" style="width: 75%;"></div>
+	    		<div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 100%;"></div>
 	  		</div>
 		</div>
 	</body>
