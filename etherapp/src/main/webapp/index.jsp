@@ -7,7 +7,7 @@
 <html>
 	<head>
 		
-		<meta http-equiv="refresh" content="5;url=login" />
+		<meta http-equiv="refresh" content="5;url=welcome" />
 		
 		<spring:url value="/resources/stylesheets/login.css" var="loginCss" />
 		<spring:url value="/resources/stylesheets/animations.css" var="loginCss" />
