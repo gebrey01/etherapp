@@ -7,7 +7,7 @@
 <html>
 	<head>
 		
-		<meta http-equiv="refresh" content="5;url=welcome" />
+		<meta http-equiv="refresh" content="6;url=welcome" />
 		
 		<spring:url value="/resources/stylesheets/login.css" var="loginCss" />
 		<spring:url value="/resources/stylesheets/animations.css" var="loginCss" />
@@ -21,16 +21,21 @@
 	    	    
 	
 		<script type="text/javascript" src="${jqueryJs}"></script>
-		<script type="text/javascript" src="${bootstrapJs}"></script>
+		<script type="text/javascript" src="${bootstrapJs}"></script>		
+		
 	</head>
 	
 	<body>	
-		<div class="loading">  
-  			<h3>Loading...........</h3>
-  
-	  		<div class="progress">
-	    		<div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 100%;"></div>
+		
+		  
+		<center>		
+		<div class="loading">
+			<h4 class="blink">Loading...........</h4>  									
+	  		<div class="progress center" style="width:65%">	  			
+	    		<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" style="width: 100%;"></div>
 	  		</div>
 		</div>
+		</center>
+		
 	</body>
 </html>

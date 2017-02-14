@@ -46,7 +46,7 @@
     
         
     
-    	<div class="container" style="margin-top:40px">
+    	<div class="container">
 		   	<div class="row">
 				<div class="col-sm-6 col-md-4 col-md-offset-4">
 					<div class="panel panel-default">
@@ -72,7 +72,7 @@
 													<span class="input-group-addon">
 														<i class="glyphicon glyphicon-user"></i>
 													</span> 
-													<form:input class="form-control" placeholder="Username" id="username" path="userName" />
+													<form:input class="form-control" placeholder="Username" id="username" path="userName" /><br/>
 													<form:errors path="userName" style="color:#ff0000"/>
 												</div>
 											</div>
@@ -81,7 +81,7 @@
 													<span class="input-group-addon">
 														<i class="glyphicon glyphicon-lock"></i>
 													</span>
-													<form:password class="form-control" placeholder="Password" id="password" path="password" />
+													<form:password class="form-control" placeholder="Password" id="password" path="password" /><br/>
 													<form:errors path="password" style="color:#ff0000"/>
 													<span class="input-group-addon" id="showPass">
 														<i id="eye" class="glyphicon glyphicon-eye-open"></i>

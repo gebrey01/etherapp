@@ -1,3 +1,7 @@
+.blink {	
+	animation: blink 1s step-start 0s infinite;
+}
+
 .progress .progress-bar {
     -moz-animation-name: animateBar;
     -moz-animation-iteration-count: 1;
@@ -12,7 +16,7 @@
     animation-name: animateBar;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: .5s;
+    animation-duration: .6s;
 }
 
 @-moz-keyframes animateBar {
@@ -26,4 +30,7 @@
 @keyframes animateBar {
     0% {transform: translateX(-100%);}
     100% {transform: translateX(0);}
+}
+@keyframes blink {
+    50% {opacity: 0.0;}
 }

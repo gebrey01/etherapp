@@ -25,6 +25,10 @@ public class LoginController {
 	@RequestMapping(value = "/home", method = RequestMethod.POST)
 	public String showWelcomePage(@ModelAttribute("userForm") User user){
 		
+		if(!loginService.validateUser(user)){
+			return "login";
+		}
+		
 		return "welcome";
 	}
 	
