@@ -4,7 +4,7 @@ import etherapp.technologies.models.User;
 
 public class LoginService {
 	
-	public boolean validateUser(User user){
+	public boolean authenticateUser(User user){
 		
 		String userName = user.getUserName();
 		String password = user.getPassword();
